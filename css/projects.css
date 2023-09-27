@@ -1,0 +1,129 @@
+#projects .row-cell
+{
+    width : 30%;
+}
+
+#projects .row-cell p
+{
+    padding-top : 0.5em;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Project slideshow */
+/* -------------------------------------------------------------------------- */
+
+/* Containers */
+.slideshow-container
+{
+    margin    : auto;
+    max-width : 100%;
+    padding   : 0;
+    position  : relative;
+}
+
+.slideshow-dot-container
+{
+    text-align  : center;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Slides */
+.slideshow-slide
+{
+    display : none;
+}
+
+.slide-active
+{
+    display : block;
+}
+
+.slideshow-slide img
+{
+    width : 100%;
+}
+
+.slideshow-slide p
+{
+    font-size  : 1em;
+    margin     : 0;
+    padding    : 0.5em 0;
+    text-align : center;
+    width      : 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Slide navigation */
+.next-slide
+{
+    border-radius : 0.5em 0 0 0.5em;
+    right         : 0;
+}
+
+.prev-slide
+{
+    border-radius : 0 0.5em 0.5em 0;
+}
+
+.next-slide,
+.prev-slide
+{
+    color       : white;
+    cursor      : pointer;
+    font-size   : 1.4em;
+    font-weight : bold;
+    margin      : 0;
+    padding     : 0.75em 0.75em 1em 1em;
+    position    : absolute;
+    top         : 45%;
+    transition  : 0.6s ease;
+    width       : auto;
+}
+
+.prev-slide:hover,
+.next-slide:hover
+{
+    background-color : rgba(0,0,0,0.8);
+    text-decoration  : none;
+}
+
+.slide-dot
+{
+    background-color : #bbb;
+    border-radius    : 50%;
+    cursor           : pointer;
+    display          : inline-block;
+    height           : 0.75em;
+    margin           : 0 2px;
+    transition       : background-color 0.6s ease;
+    width            : 0.75em;
+}
+
+.dot-active
+{
+    background-color: #717171;
+}
+
+.slide-number
+{
+    color     : #f2f2f2;
+    font-size : 0.75em;
+    padding   : 8px 12px;
+    position  : absolute;
+    top       : 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Media */
+/* -------------------------------------------------------------------------- */
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px)
+{
+    .prev-slide,
+    .next-slide,
+    .slide-caption
+    {
+        font-size: 1em;
+    }
+}
